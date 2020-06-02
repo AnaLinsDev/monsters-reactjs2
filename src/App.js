@@ -9,7 +9,8 @@ class App extends Component {
 
     this.state = {
       monsters: [],
-      searchField: ''
+      searchField: '',
+      title: ''
     }
     // this.handleChange = this.handleChange.bind(this)
   }
@@ -22,7 +23,7 @@ class App extends Component {
 }
 
   handleChange = (e) => {
-    this.setState({searchField: e.target.value})
+    this.setState({searchField: e.target.value, title: e.target.value})
   }
 
   render(){
